@@ -1,0 +1,161 @@
+.home-body {
+    display: flex;
+    background-color: rgb(234, 248, 253);
+}
+
+.about {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:50px;
+    font-size: 5rem;
+    text-align:center;
+    font-weight: 700;
+    color: rgb(16, 16, 91);
+    height: 490px;
+}
+
+.auto-typed {
+    display: inline-block;
+}
+
+.span-ele {
+    color: rgb(53, 53, 190);
+}
+
+.features-head {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+}
+
+.feature-pts {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.feature-pts .feature-pt {
+    background-color: rgb(234, 248, 253);
+    width: 370px;
+    height: 270px;
+    border-radius: 15px;
+    justify-items: center;
+    align-content: center;
+    color: rgb(26, 26, 97);
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-pts .feature-pt:hover {
+    transform: rotateY(20deg) rotateX(10deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.feature-img img {
+    width: 300px;
+    height: 300px;
+    transform: rotateY(0deg) rotateX(0deg);
+    transition: transform 0.6s ease;
+}
+
+.feature-img img:hover {
+    transform: rotateY(15deg) rotateX(10deg) scale(1.1);
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .about{
+        font-size: 3rem;
+    }
+
+    .home-body{
+        height:400px;
+    }
+    .about-animation {
+        width:00px;
+        height:150px;
+        opacity:0;
+    }
+    
+    .feature-pts .feature-pt{
+        width:300px;
+        height:250px;
+        margin:0;
+    }
+    .feature-img img{
+        width:250px;
+        height:250px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width:767px) {
+    .home-body{
+        height:600px;
+    }
+    .about{
+        font-size: 5rem;
+        display: block;
+    }
+
+    .about-animation {
+        width:200px;
+        height:150px;
+        opacity:0;
+    }
+
+    .feature-pts .feature-pt{
+        width:300px;
+        height:250px;
+        margin:0;
+    }
+    .feature-img img{
+        width:250px;
+        height:250px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .about{
+        font-size: 3rem;
+        
+    }
+    .about-animation Lottie{
+        
+        width:200px;
+        height:150px;
+        
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .about{
+        font-size: 4.3rem;
+    }
+    .about-animation Lottie{
+        
+        width:500px;
+        height:450px;
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
